@@ -22,7 +22,7 @@ export default class FilePositioning {
       const folderName = oldFolderName ? oldFolderName.name : '';
       const fileName = oldFileName ? this._handleTrim(oldFileName) : '';
 
-      vscode.workspace.findFiles(`**/${fileName}`, '*​/node_modules/*', 10)
+      vscode.workspace.findFiles(`**/${fileName}`, `**/node_modules/**`, 10)
         .then((files) => {
           // ** 过滤指定folder下的文件 **
           const filteredFiles = files.filter((file) => {
@@ -32,7 +32,7 @@ export default class FilePositioning {
           vscode.window.showInformationMessage(`${
             filteredFiles.toString()
           }`);
-        })
+        });
     })
   }
 
