@@ -18,9 +18,9 @@ export default class FilePositioning {
      */
 
     this._handleGetUserInput().then((userInput) => {
-      let [oldFolderName, oldFileName] = userInput;
-      const folderName = this._handleTrim((oldFolderName ? oldFolderName : ''));
-      const fileName = this._handleTrim(oldFileName ? oldFileName : '');
+      const { oldFolderName, oldFileName, } = userInput;
+      const folderName = oldFolderName ? oldFolderName.name : '';
+      const fileName = oldFileName ? this._handleTrim(oldFileName) : '';
 
       vscode.workspace.findFiles(`**/${fileName}`, '*​/node_modules/*', 10)
         .then((files) => {
@@ -29,19 +29,18 @@ export default class FilePositioning {
             return this._handleMatchPathExact(folderName, file.fsPath);
           });
 
-          vscode.window.showInformationMessage(`
-            ${filteredFiles.toString()}
-          `);
-
+          vscode.window.showInformationMessage(`${
+            filteredFiles.toString()
+          }`);
         })
     })
   }
 
   private _handleGetUserInput() {
     return vscode.window
-      .showInputBox({
+      .showWorkspaceFolderPick({
         ignoreFocusOut: true,
-        placeHolder: 'Enter the entire folder name, like `ts-utility-plugins`',
+        placeHolder: 'Selete the folder you will be looking for...',
       })
       .then((folderName) => {
         return vscode.window
@@ -50,7 +49,10 @@ export default class FilePositioning {
             placeHolder: 'Enter the entire file name, like `Home.tsx`',
           })
           .then((fileName) => {
-            return [folderName, fileName];
+            return {
+              oldFolderName: folderName,
+              oldFileName: fileName,
+            };
           })
       })
   }
