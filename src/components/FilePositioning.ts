@@ -24,14 +24,23 @@ export default class FilePositioning {
 
       vscode.workspace.findFiles(`**/${fileName}`, `**/node_modules/**`, 10)
         .then((files) => {
+
           // ** 过滤指定folder下的文件 **
-          const filteredFiles = files.filter((file) => {
-            return this._handleMatchPathExact(folderName, file.fsPath);
+          const filteredFiles = files.reduce((total: string[], current) => {
+            if (this._handleMatchPathExact(folderName, current.fsPath)) {
+              total.push(current.fsPath);
+            }
+            return total;
+          }, []);
+
+          vscode.window.showQuickPick(filteredFiles, {
+            matchOnDescription: true,
+            matchOnDetail: true,
+            placeHolder: `${filteredFiles.length} files found`,
+          }).then((selectedFile) => {
+            vscode.window.showInformationMessage(`select ${selectedFile}`);
           });
 
-          vscode.window.showInformationMessage(`${
-            filteredFiles.toString()
-          }`);
         });
     })
   }
@@ -46,7 +55,7 @@ export default class FilePositioning {
         return vscode.window
           .showInputBox({
             ignoreFocusOut: true,
-            placeHolder: 'Enter the entire file name, like `Home.tsx`',
+            placeHolder: 'Enter the entire file name, like `file-positioning.ts`',
           })
           .then((fileName) => {
             return {
