@@ -1,6 +1,7 @@
 {
 	"name": "file-positioning",
 	"displayName": "File Positioning",
+	"publisher": "ddzy",
 	"description": "Accurately find specific files in the workspace folder",
 	"version": "1.0.0",
 	"engines": {
