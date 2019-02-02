@@ -1,6 +1,8 @@
 # File Positioning
 
-![file-positioning](src/assets/images/logo.png)
+<div align="center">
+  <img src="./src/assets/images/logo.png" width="400" alt="file-positioning">
+</div>
 
 ## Features
 
@@ -8,7 +10,7 @@ Have you tried looking for specific files in a large workspace folder? It may be
 
 Now, `file-positioning` can help you to find the file, just like this:
 
-Gif
+![display_one](src/assets/images/display_one.gif)
 
 ## Release Notes
 
