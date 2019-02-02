@@ -1,6 +1,6 @@
 # File Positioning
 
-This is the README for your extension "file-positioning". After writing up a brief description, we recommend including the following sections.
+file-position-logo
 
 ## Features
 
