@@ -11,6 +11,13 @@
 		"Extension Packs",
 		"Other"
 	],
+	"keywords": [
+		"file",
+		"find",
+		"position",
+		"find file",
+		"fine the specified file in the folder"
+	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld",
 		"onCommand:extension.fileposition"
