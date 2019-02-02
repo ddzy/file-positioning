@@ -1,12 +1,12 @@
 # File Positioning
 
-file-position-logo
+![file-positioning](src/assets/images/logo.png)
 
 ## Features
 
 Have you tried looking for specific files in a large workspace folder? It may be a confusing problem.
 
-Now, `file-positioning` can help you, just like this:
+Now, `file-positioning` can help you to find the file, just like this:
 
 Gif
 
