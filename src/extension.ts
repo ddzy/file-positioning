@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "file-positioning" is now active!');
 
 
-	const disposable = vscode.commands.registerCommand('extension.fileposition', () => {
+	const disposable = vscode.commands.registerCommand('extension.filePositioning', () => {
 		new FilePositioning();
 	});
 

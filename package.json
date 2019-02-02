@@ -20,21 +20,14 @@
 		"fine the specified file in the folder"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld",
-		"onCommand:extension.fileposition"
+		"onCommand:extension.filePositioning"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"keybindings": [
 			{
 				"key": "Shift+F2",
-				"command": "extension.fileposition"
+				"command": "extension.filePositioning"
 			}
 		]
 	},
