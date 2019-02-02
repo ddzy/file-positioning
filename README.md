@@ -6,7 +6,7 @@
 
 ## Features
 
-Have you tried looking for specific files in a large workspace folder? It may be a confusing problem.
+> Have you tried looking for specific files in a large workspace folder? It may be a confusing problem.
 
 Now, `file-positioning` can help you to find the file, just like this:
 
@@ -15,7 +15,7 @@ Now, `file-positioning` can help you to find the file, just like this:
 ## Usage
 
 1. Open this extension by `Shift+F2`
-2. Try `Ctrl+Shift+P` once, and then enter the `file positioning` command
+2. Try `Ctrl+Shift+P` once, and then enter the `File Positioning` command
 
 ## Release Notes
 
