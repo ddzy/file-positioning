@@ -2,7 +2,7 @@
 	"name": "file-positioning",
 	"displayName": "File Positioning",
 	"description": "Accurately find specific files in the workspace folder",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
