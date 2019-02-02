@@ -3,7 +3,7 @@
 	"displayName": "File Positioning",
 	"publisher": "ddzy",
 	"description": "Accurately find specific files in the workspace folder",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -21,8 +21,8 @@
 	],
 	"icon": "assets/images/logo.png",
 	"galleryBanner": {
-		"color": "#C80000",
-		"theme": "dark"
+		"color": "#1890ff",
+		"theme": "light"
 	},
 	"activationEvents": [
 		"onCommand:extension.filePositioning"
