@@ -10,3 +10,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Changed
 
 - Initial release
+
+## [1.0.4] - 2019-02-02
+
+### Changed
+
+- Modify the color theme, which was in [file-positioning](https://marketplace.visualstudio.com/items?itemName=ddzy.file-positioning).
