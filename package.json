@@ -23,6 +23,7 @@
 	"activationEvents": [
 		"onCommand:extension.filePositioning"
 	],
+	
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands":[
