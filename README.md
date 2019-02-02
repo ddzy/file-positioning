@@ -14,14 +14,10 @@ Now, `file-positioning` can help you to find the file, just like this:
 
 ## Release Notes
 
-### 1.0.0 --(2019-2-2)
-
-Initial release
-
------------------------------------------------------------------------------------------------------------
+@see [CHANGELOG](./CHANGELOG.md)
 
 ## LICENSE
 
-[MIT](./LICENSE)
+@see [MIT](./LICENSE)
 
 **Enjoy!**
