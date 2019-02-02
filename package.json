@@ -19,11 +19,20 @@
 		"find file",
 		"fine the specified file in the folder"
 	],
+	"icon": "https://oos.yyge.top/2019/2/2/vsce/file-positioning/images/logo.png",
 	"activationEvents": [
 		"onCommand:extension.filePositioning"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands":[
+			{
+				"command": "extension.filePositioning",
+				"title": "File Positioning",
+				"icon": "https://oos.yyge.top/2019/2/2/vsce/file-positioning/images/command_icon_64.png",
+				"category": "File"
+			}
+		],
 		"keybindings": [
 			{
 				"key": "Shift+F2",
