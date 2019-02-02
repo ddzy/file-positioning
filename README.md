@@ -20,6 +20,6 @@ Initial release
 
 ## LICENSE
 
-[MIT]()
+[MIT](./LICENSE)
 
 **Enjoy!**
