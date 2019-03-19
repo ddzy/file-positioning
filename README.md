@@ -4,6 +4,10 @@
   <img src="https://oos.yyge.top/2019/2/2/vsce/file-positioning/images/logo.png" width="400" alt="file-positioning">
 </div>
 
+## Origin
+
+For VScode issue [#67035](https://github.com/Microsoft/vscode/issues/67035)
+
 ## Features
 
 > Have you tried looking for specific files in a large workspace folder? It may be a confusing problem.
